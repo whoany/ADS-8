@@ -46,7 +46,7 @@ void printFreq(BST<std::string>& tree) {
 				return a.first < b.first;
 		});
 
-	std::ofstream out("../result/freq.txt");
+	std::ofstream out("result/freq.txt");
 	for (const auto& item : items) {
 		std::cout << item.first << ' ' << item.second << std::endl;
 		if (out)
